@@ -1,6 +1,8 @@
 fastapi
 uvicorn[standard]
 pydantic
-opencv-python
 torch
+python-multipart
+ultralytics
+opencv-python-headless
 # detectron2 should be installed via wheels matching CUDA/Python version
