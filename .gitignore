@@ -1,0 +1,33 @@
+#generate a .gitignore file for a Python project
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# C extensions
+*.so
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+*.egg-info
+
+# weights
+*.hdf5
+*.h5
+*.pt
+*.pth
+
+#pycache files
+__pycache__/
+
+
+# PyInstaller
+#  Usually these files are written by a python script from a template

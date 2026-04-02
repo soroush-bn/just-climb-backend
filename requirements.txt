@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pydantic
+opencv-python
+torch
+# detectron2 should be installed via wheels matching CUDA/Python version
