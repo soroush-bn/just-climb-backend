@@ -5,7 +5,7 @@ import time
 import cv2
 import numpy as np
 
-url = "http://127.0.0.1:8000/api/v1/segment-holds"
+url = "http://ec2-35-182-4-62.ca-central-1.compute.amazonaws.com:8000/api/v1/segment-holds"
 image_path = "sample_wall.jpg" 
 
 print(f"Sending {image_path} to {url}...")
@@ -49,7 +49,7 @@ if response.status_code == 200:
     img = cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0)
     
     # 6. Save the final image to your directory
-    output_filename = "segmented_wall_output.jpg"
+    output_filename = "segmented_wall_output_from_aws.jpg"
     cv2.imwrite(output_filename, img)
     print(f"Saved visualization to '{output_filename}'")
 
